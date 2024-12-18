@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  dynamic_config_app:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./config.ini:/app/config.ini
+    restart: always
